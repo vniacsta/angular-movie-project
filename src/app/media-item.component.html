@@ -1,0 +1,15 @@
+<article class="movie-item">
+  <h2>{{ mediaItem.name | slice: 0: 15 | uppercase }}</h2>
+  <div class="movie-details">
+    <ng-template [ngIf]="mediaItem.watchedOn">
+      <p>Watched on {{ mediaItem.watchedOn | date }}</p>
+    </ng-template>
+    <p>{{ mediaItem.category }}</p>
+    <p>{{ mediaItem.year }}</p>
+  </div>
+  <div class="tools">
+    <i [mwFavorite]="mediaItem.isFavorite" class="far fa-heart"></i>
+    <a (click)="onDelete()" class="delete">Remove</a>
+    <a class="details">Watch</a>
+  </div>
+</article>
