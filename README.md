@@ -1,8 +1,10 @@
-# Angular Essential Training
+# Movie Watcher with Angular
 
 This is the repo for the course **Angular Essential Training** from Linkedin.  
+Building an app to list all the movies I want to watch or have watched!  
 
-## Course Description
+
+### Course Description
 
 Topics include:
 - What is Angular?
