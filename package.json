@@ -11,7 +11,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --base-href https://vniacsta.github.io/angular-movie-project/",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "ghpages": "ngh --dir=dist/"
   },
   "private": true,
   "dependencies": {
