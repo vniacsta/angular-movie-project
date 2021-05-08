@@ -1,0 +1,74 @@
+:host {
+  display: block;
+  padding: 10px 30px 30px 40px;
+  margin: 40px 30px;
+  background-color: #F7A9A8;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.form-box {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  width: 100px;
+}
+
+header,
+label {
+  color: #fff;
+}
+
+label {
+  margin-right: 20px;
+}
+
+input,
+select {
+  background-color: #EF798A;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  box-sizing: content-box;
+  width: 280px;
+}
+
+.ng-invalid:not(.ng-pristine):not(.required-invalid) {
+  border: 2px solid #d93a3e;
+  border-radius: 5px;
+}
+
+input[required].ng-invalid {
+  border-right: 4px solid #d93a3e;
+}
+
+input[required]:not(.required-invalid),
+input[required].ng-invalid:not(.required-invalid) {
+  border-right: 4px solid #EF798A;
+}
+
+.error {
+  color: #d93a3e;
+}
+
+button {
+  background-color: #EF798A;
+  border: 0;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 20px;
+}
+
+button:disabled {
+  background-color: #999;
+  color: #eee;
+  cursor: default;
+}

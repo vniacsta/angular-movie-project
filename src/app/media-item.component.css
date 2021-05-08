@@ -1,66 +1,98 @@
 :host {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 160px;
   height: 200px;
   border: 2px solid;
-  background-color: #29394b;
-  padding: 10px;
-  color: #bdc2c5;
+  border-radius: 5px;
+  background-color: #f7a9a8;
+  padding: 15px;
+  color: #fff;
   margin: 0 12px 12px 0;
+  position: relative;
 }
+
+:host-context(.medium-movies) .label {
+  background-color: #7d82b8;
+}
+
+:host-context(.medium-series) .label {
+  background-color: #ef798a;
+}
+
+:host(.medium-movies) {
+  border-color: #7d82b8;
+}
+
+:host(.medium-movies) > h2 {
+  color: #7d82b8;
+}
+
+:host(.medium-series) {
+  border-color: #ef798a;
+}
+
+:host(.medium-series) > h2 {
+  color: #ef798a;
+}
+
 h2 {
+  margin: 5px 0;
   font-size: 1.6em;
   flex: 1;
+  min-height: 75px;
 }
-:host(.medium-movies) {
-  border-color: #53ace4;
+
+p {
+  margin: 0;
+  font-size: 0.9rem;
 }
-:host(.medium-movies) > h2 {
-  color: #53ace4;
+
+.category {
+  margin-left: -6px;
 }
-:host(.medium-series) {
-  border-color: #45bf94;
+
+.tools {
+  position: absolute;
+  bottom: 15px;
+  margin-top: 10px;
+  display: flex;
 }
-:host(.medium-series) > h2 {
+
+.favorite {
+  margin-right: 16px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.favorite.is-favorite {
+  color: #37ad79;
+}
+
+.favorite.is-favorite-hovering {
   color: #45bf94;
 }
-.tools {
-  margin-top: 8px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.favorite {
-  width: 24px;
-  height: 24px;
-  fill: #bdc2c5;
-  cursor: pointer;
-}
-.favorite.is-favorite {
-  fill: #37ad79;
-}
-.favorite.is-favorite-hovering {
-  fill: #45bf94;
-}
+
 .favorite.is-favorite.is-favorite-hovering {
-  fill: #ec4342;
+  color: #ec4342;
 }
+
 .delete {
-  display: block;
+  margin-right: 16px;
   background-color: #ec4342;
-  padding: 4px;
+  padding: 4px 7px;
   font-size: 0.8em;
   border-radius: 4px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
+
 .details {
-  display: block;
   background-color: #37ad79;
   padding: 4px;
   font-size: 0.8em;
   border-radius: 4px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }

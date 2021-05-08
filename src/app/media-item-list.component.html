@@ -1,7 +1,14 @@
+<header
+  [ngClass]="{
+    'medium-movies': medium === 'Movies',
+    'medium-series': medium === 'Series'
+  }"
+>
+  <h2>{{ medium }}</h2>
+  <mw-category-list *ngIf="mediaItems" [categories]="mediaItems | categoryList">
+  </mw-category-list>
+</header>
 <section>
-  <header>
-    <div>{{ mediaItems | categoryList }}</div>
-  </header>
   <mw-media-item
     *ngFor="let mediaItem of mediaItems"
     [mediaItem]="mediaItem"
@@ -13,3 +20,6 @@
   >
   </mw-media-item>
 </section>
+<footer>
+  <a routerLink="/add"><i class="icon fas fa-plus"></i></a>
+</footer>

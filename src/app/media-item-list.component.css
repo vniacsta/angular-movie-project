@@ -1,37 +1,59 @@
 :host {
   display: flex;
-  height: calc(100% - 95px);
+  box-sizing: content-box;
+  height: 100%;
   flex-direction: column;
   padding: 10px;
 }
+
+nav a {
+  cursor: pointer;
+}
+
 header {
-  color: #c6c5c3;
+  color: #fff;
+  margin-left: 20px;
 }
+
 header.medium-movies {
-  color: #53ace4;
+  color: #7d82b8;
 }
+
 header.medium-series {
-  color: #45bf94;
+  color: #ef798a;
 }
+
 header > h2 {
   font-size: 1.4em;
 }
+
 header > h2.error {
   color: #d93a3e;
 }
+
 section {
   flex: 1;
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
+  margin: 20px;
 }
+
 section > media-item {
   margin: 10px;
 }
+
 footer {
-  text-align: right;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
 }
+
 footer .icon {
-  width: 64px;
-  height: 64px;
+  font-size: 26px;
+  color: #7d82b8;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 15px 16.625px;
 }
